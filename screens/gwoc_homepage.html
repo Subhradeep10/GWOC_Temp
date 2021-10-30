@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWOC</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../styles/gwoc_homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,11 +48,11 @@
 
     <!-- Home Page Design -->
 
-    <div class="home-page-design">
+    <div class="home-page-design" data-aos="fade-up" data-aos-delay="500">
         <img src="../assets/home-design.png" class="home-page-design-image">
     </div>
 
-    <div class="home-page-unity">
+    <div class="home-page-unity" data-aos="fade-up" data-aos-delay="500">
         <img src="../assets/Unity.png" alt="">
         <h2>U-N-I-T(y)eam</h2>
     </div>
@@ -59,8 +60,8 @@
 
     <!-- About Section -->
 
-    <div class="about-section" id="about">
-        <div class="about-girlscript">
+    <div class="about-section" id="about" data-aos="fade-in" data-aos-delay="500">
+        <div class="about-girlscript" data-aos="slide-left" data-aos-duration="2000">
             <div class="about-girlscript-header">
                 About GirlScript
             </div>
@@ -81,7 +82,7 @@
 
             </div>
         </div>
-        <div class="about-gwoc">
+        <div class="about-gwoc" data-aos="slide-right" data-aos-duration="2000">
             <div class="about-gwoc-header" style="color: #8A8A8A;">
                 About GWOC
             </div>
@@ -302,7 +303,16 @@
         </div>
     </div>
 
+    <!-- AOS Tag -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 
 </body>
+
+
 
 </html>
