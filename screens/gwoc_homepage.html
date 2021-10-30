@@ -21,7 +21,7 @@
 <body>
     <!-- Navbar -->
 
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down" data-aos-delay="2000">
         <div class="logo">
             <img src="../assets/Logo.png">
         </div>
@@ -48,7 +48,7 @@
 
     <!-- Home Page Design -->
 
-    <div class="home-page-design" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-page-design" data-aos="fade-up" data-aos-delay="1500">
         <img src="../assets/home-design.png" class="home-page-design-image">
     </div>
 
@@ -61,7 +61,7 @@
     <!-- About Section -->
 
     <div class="about-section" id="about" data-aos="fade-in" data-aos-delay="500">
-        <div class="about-girlscript" data-aos="slide-left" data-aos-duration="2000">
+        <div class="about-girlscript" data-aos="slide-right" data-aos-duration="2000">
             <div class="about-girlscript-header">
                 About GirlScript
             </div>
@@ -82,7 +82,7 @@
 
             </div>
         </div>
-        <div class="about-gwoc" data-aos="slide-right" data-aos-duration="2000">
+        <div class="about-gwoc" data-aos="slide-left" data-aos-duration="2000">
             <div class="about-gwoc-header" style="color: #8A8A8A;">
                 About GWOC
             </div>
@@ -107,7 +107,7 @@
 
     <!--Contruibution Section-->
 
-    <div class="contruibution">
+    <div class="contruibution" data-aos="slide-down" data-aos-duration="1000">
         <div>
             <p class="contruibution-heading">
                 How Can You <span style="color: #FF7A19;">CONTRIBUTE ?</span>
@@ -130,7 +130,7 @@
 
         <!-- Document Contruibution Section -->
 
-        <div class="about-document-contruibution">
+        <div class="about-document-contruibution" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="about-document-contruibution-content">
                 <div class="about-document-contruibution-heading">
                     IsDoument()
@@ -155,7 +155,7 @@
         </div>
 
         <!-- Video Contruibution Section -->
-        <div class="about-video-contruibution">
+        <div class="about-video-contruibution" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="about-video-contruibution-image">
                 <img src="../assets/isvideo.png">
 
@@ -180,7 +180,7 @@
         </div>
 
         <!-- Audio Contruibution -->
-        <div class="about-audio-contruibution">
+        <div class="about-audio-contruibution" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="about-audio-contruibution-content">
                 <div class="about-audio-contruibution-heading">
                     IsAudio()
@@ -212,7 +212,7 @@
             <p>Choose your <span style="color: #FF7A19;">ROLE</span> and join us</p>
         </div>
         <div class="role-cards">
-            <div class="contruibuter-role-card">
+            <div class="contruibuter-role-card" data-aos="slide-right" data-aos-duration="2000">
                 <div class="contruibuter-role-card-heading">
                     CONTRUIBUTERS
                 </div>
@@ -234,7 +234,7 @@
                     <button class="register-button">REGISTRAION CLOSED</button>
                 </div>
             </div>
-            <div class="mentor-role-card">
+            <div class="mentor-role-card" data-aos="slide-left" data-aos-duration="2000">
                 <div class="mentor-role-card-heading">
                     MENTORS
                 </div>
@@ -307,6 +307,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        AOS.init({
+            once: false,
+
+        });
     </script>
 
 
