@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWOC</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../styles/gwoc_homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
 </head>
 
 <body>
     <!-- Navbar -->
+
+    <nav style="align-items: center;">
+        <div class="logo">
+            <a href="./gwoc_homepage.html">
+                <img src="../assets/logo-new.png" alt="">
+            </a>
+
+
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./gwoc_teampage.html">Team</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#register"><button class="register-btn">Register</button></a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul>
+    </nav>
+
 
     <!-- <div class="navbar" data-aos="fade-down" data-aos-delay="2000">
         <div class="logo">
@@ -49,20 +79,20 @@
 
     <!-- Home Page Design -->
 
-    <!-- <div class="home-page-design" data-aos="fade-up" data-aos-delay="1500">
+    <div class="home-page-design" data-aos="fade-up" data-aos-delay="1500" id="home">
         <img src="../assets/home-design.png" class="home-page-design-image">
     </div>
 
     <div class="home-page-unity" data-aos="fade-up" data-aos-delay="500">
-        <img src="../assets/Unity.png" alt="">
+        <img src="../assets/unity-new.png" alt="">
         <h2>U-N-I-T(y)eam</h2>
-    </div> -->
+    </div>
 
 
     <!-- About Section -->
 
     <div class="about-section" id="about" data-aos="fade-in" data-aos-delay="500">
-        <div class="about-girlscript" data-aos="slide-right" data-aos-duration="2000">
+        <div class="about-girlscript" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-girlscript-header">
                 About GirlScript
             </div>
@@ -83,7 +113,7 @@
 
             </div>
         </div>
-        <div class="about-gwoc" data-aos="slide-left" data-aos-duration="2000">
+        <div class="about-gwoc" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-gwoc-header" style="color: #8A8A8A;">
                 About GWOC
             </div>
@@ -108,7 +138,7 @@
 
     <!--Contribution Section-->
 
-    <div class="contribution" data-aos="slide-down" data-aos-duration="1000">
+    <div class="contribution" data-aos="fade-down" data-aos-duration="1000">
         <div>
             <p class="contribution-heading">
                 How Can You <span style="color: #FF7A19;">CONTRIBUTE ?</span>
@@ -131,7 +161,7 @@
 
         <!-- Document Contribution Section -->
 
-        <div class="about-document-contribution">
+        <div class="about-document-contribution" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-document-contribution-content">
                 <div class="about-document-contribution-heading">
                     IsDoument()
@@ -156,7 +186,7 @@
         </div>
 
         <!-- Video Contribution Section -->
-        <div class="about-video-contribution">
+        <div class="about-video-contribution" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-video-contribution-image">
                 <img src="../assets/isvideo.png">
 
@@ -181,7 +211,7 @@
         </div>
 
         <!-- Audio Contribution -->
-        <div class="about-audio-contribution">
+        <div class="about-audio-contribution" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-audio-contribution-content">
                 <div class="about-audio-contribution-heading">
                     IsAudio()
@@ -213,7 +243,7 @@
             <p>Choose your <span style="color: #FF7A19;">ROLE</span> and join us</p>
         </div>
         <div class="role-cards">
-            <div class="contributer-role-card" data-aos="slide-right" data-aos-duration="2000">
+            <div class="contributer-role-card" data-aos="fade-down" data-aos-duration="2000">
                 <div class="contributer-role-card-heading">
                     CONTRIBUTERS
                 </div>
@@ -235,7 +265,7 @@
                     <button class="register-button">REGISTRAION CLOSED</button>
                 </div>
             </div>
-            <div class="mentor-role-card" data-aos="slide-left" data-aos-duration="2000">
+            <div class="mentor-role-card" data-aos="fade-down" data-aos-duration="2000">
                 <div class="mentor-role-card-heading">
                     MENTORS
                 </div>
@@ -266,7 +296,8 @@
 
     <h2>Stay up to date with <span style="color: #FF7A19;"> TIMELINE </span></h2>
     <div class="timeline">
-        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-down"
+            data-aos-duration="1000">
             <div class="timeline__event__icon ">
                 <i class="far fa-calendar-alt"></i>
 
@@ -284,7 +315,8 @@
                 </div>
             </div>
         </div>
-        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2" data-aos="fade-down"
+            data-aos-duration="1500">
             <div class="timeline__event__icon">
                 <i class="far fa-calendar-alt"></i>
 
@@ -302,7 +334,8 @@
                 </div>
             </div>
         </div>
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
+            data-aos-duration="2000">
             <div class="timeline__event__icon">
                 <i class="far fa-calendar-alt"></i>
 
@@ -321,7 +354,8 @@
 
             </div>
         </div>
-        <div class="timeline__event animated fadeInUp timeline__event--type1">
+        <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
+            data-aos-duration="2500">
             <div class="timeline__event__icon">
                 <i class="far fa-calendar-alt"></i>
 
@@ -395,7 +429,7 @@
     </div> -->
 
     <!-- Contact Section -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact-heading-section">
             <div class="contact-heading">
                 The <span style="color: #AB4806;"> World's Largest </span> Multilingual Content <br>
@@ -449,6 +483,7 @@
 
         });
     </script>
+    <script src="../app.js"></script>
 
 </body>
 
