@@ -64,7 +64,7 @@ nav .logo {
 }
 
 .register-btn{
-    background: rgb(255, 94, 0);
+    background: #FF6701;
     color: rgb(255, 255, 255);
     padding: 10px;
     border : none;
@@ -75,10 +75,10 @@ nav .logo {
     transition: 0.5s;
 }
 .register-btn:hover{
-    color: rgb(255, 94, 0);
+    color: #FF6701;
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    border : 1px solid black;
+    border : 3px solid #FF6701;
     border-radius: 20px;
     font-weight: bold;
     font-size: 1rem;
@@ -271,20 +271,21 @@ nav .logo {
     align-items: center;
     font-size: 1.5rem;
     color: #FF7A19;
-    margin-bottom: 25px;
+    padding: 4rem 0 0;
+    /* margin-bottom: 25px; */
 }
 
 /*About Section*/
 .about-girlscript{
     background-color: #FF7A19;
     color: white;
-    padding: 2rem;
+    padding: 3rem;
     width: 100%;
 }
 
 .about-gwoc{
     background-color: white;
-    padding: 2rem;
+    padding: 3rem;
     width: 100%;
 }
 
@@ -354,7 +355,7 @@ nav .logo {
     .home-page-unity{
         position: relative;
         margin-bottom: 20%;
-        top: 110px;
+        top: 70px;
     }
 }
 /* Contribution */
@@ -419,10 +420,10 @@ nav .logo {
     transition: 0.5s;
 
 }
-.about-document-contribution-image:hover{
+/* .about-document-contribution-image:hover{
     transform: scale(1.2);
     
-}
+} */
 
 .about-video-contribution{
     flex-direction: row;
@@ -451,10 +452,10 @@ nav .logo {
 .about-video-contribution-image{
     transition: 0.5s;
 }
-.about-video-contribution-image:hover{
+/* .about-video-contribution-image:hover{
     transform: scale(1.2);
     
-}
+} */
 
 .about-audio-contribution{
     flex-direction: row;
@@ -483,10 +484,10 @@ nav .logo {
     transition: 0.5s;
 
 }
-.about-audio-contribution-image:hover{
+/* .about-audio-contribution-image:hover{
     transform: scale(1.2);
     
-}
+} */
 
 @media screen and (max-width: 768px){
     .about-document-contribution{
@@ -531,6 +532,8 @@ nav .logo {
     text-align: center;
     padding: 50px 10px 50px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap:2rem;
 }
 .contributer-role-card{
     text-align: center;
@@ -619,17 +622,17 @@ nav .logo {
 
 @media screen and (max-width: 768px){
     .role-cards{
+        display: flex;
         flex-direction: column;
+        align-content: space-around;
     }
 
     .contributer-role-card{
         width: 300px;
-        margin: 2rem auto;
     }
 
     .mentor-role-card{
         width: 300px;
-        margin: 2rem auto;
     }
     
 }
@@ -880,6 +883,7 @@ h2 {
 .othersponsers{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .sponser-heading{
@@ -891,11 +895,18 @@ h2 {
 }
 
 .primary-sponser-image{
-    width: 15%;
+    width: 200px;
     margin: auto;
     box-shadow: 0 0 30px;
     border-radius: 10px;
     /* padding-bottom: 1rem; */
+}
+
+.primary-sponser-image img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primarysponsers-heading{
@@ -915,12 +926,18 @@ h2 {
 }
 
 .secondary-sponser-image{
-    border: 0px rgb(53, 52, 52) solid;
-    margin: auto;
     box-shadow: 0 0 30px rgb(53, 53, 53);
     border-radius: 10px;
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 280px;
+    margin: auto;
+}
 
+.secondary-sponser-image img{
+    width: 60%;
 }
 
 .tertiary-sponser-heading{
@@ -932,27 +949,31 @@ h2 {
 }
 
 .tertiary-sponser-image{
-    border: 0px rgb(53, 52, 52) solid;
-    margin: auto;
     box-shadow: 0 0 30px rgb(53, 53, 53);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media (max-width: 768px){
-    
-    .primary-sponser-image{
-        width: 20%;
-        margin: auto;
-        box-shadow: 0 0 30px;
-        border-radius: 10px;
-        /* padding-bottom: 1rem; */
-    }
-    .about-video-contribution-image{
-        padding-right: 1rem;
-    }
-    
+.tertiary-sponser-image img{
+    width: 200px;
 }
+
+.sponsor-button{
+    font-size: 1rem; 
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: #FF6701;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    height: 3rem; 
+    margin-top: 1rem;
+    display: block;
+    margin: auto;
+} 
 
 .contact{
     background-color: #FF8400;
