@@ -1,8 +1,3 @@
-*{
-    transition: all 0.2s ease-out;
-    background-color: white;
-}
-
 /*Navbar*/
 *{
     box-sizing: border-box;
@@ -11,9 +6,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     animation: normal;
-
 }
-
 
 /* Navbar */
 
@@ -296,8 +289,6 @@ html::-webkit-scrollbar {
     border-radius: 5rem;
   }
 body{
-    background-color: #ff7a00; 
-    padding:0px 10px 10px 10px; 
     box-sizing: border-box;
 }
 .nav_cont{
@@ -691,4 +682,68 @@ p,a,h1,h2,h3,h4 {
 .credit, .copyright{
     border-top: 0.1rem solid #d76067;
     padding:20px 0px;
+}
+
+.contact{
+    background-color: #FF8400;
+    color: white;
+    padding: 3rem 5rem 0;
+}
+
+.contact-heading-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-heading{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-media a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 3rem 0 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-logo{
+    background-color: #FFF3E5;
+    border-radius: 50rem;
+}
+
+.contact-links ul{
+    list-style-type:none;
+    text-align: right;
+}
+
+.contact-links ul li{
+    padding: 5px;
+}
+
+.contact-copyright{
+    background-color: #FFAD76;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
 }

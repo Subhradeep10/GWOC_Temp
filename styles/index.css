@@ -891,7 +891,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .primary-sponser-image{
@@ -955,6 +955,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 90px;
 }
 
 .tertiary-sponser-image img{
@@ -1014,6 +1015,7 @@ h2 {
     color: white;
     padding: 3rem 0 3rem;
     flex-wrap: wrap;
+    gap:2rem;
 }
 
 .contact-logo{
