@@ -28,6 +28,7 @@ nav .mainMenu li a {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 1rem;
+    font-weight: bold;
     /* transition: 1s; */
 }
 nav .mainMenu li a:hover {
@@ -72,8 +73,8 @@ nav .logo {
 .register-btn:hover{
     color: #FF6701;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border : 3px solid #FF6701;
+    /* padding: 10px; */
+    /* border : 0.1px solid #FF6701; */
     border-radius: 20px;
     font-weight: bold;
     font-size: 1rem;
@@ -229,7 +230,7 @@ nav .logo {
 /* Contribution */
 
 .contribution{
-    padding: 5rem 3rem 0;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -237,7 +238,7 @@ nav .logo {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2.2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     font-weight: bolder;
 }
 .contribution-content{
@@ -245,7 +246,7 @@ nav .logo {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     padding: 2.2rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .contribution-content a{
@@ -397,7 +398,7 @@ nav .logo {
     text-align: center;
     background-color: #FF7A19;
     border-radius: 40px;
-    box-shadow: 0 0 40px rgb(53, 53, 53);
+    box-shadow: 0 0 10px rgb(53, 53, 53);
     width: 420px;
 }
 
@@ -414,13 +415,14 @@ nav .logo {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: 'Poppins', sans-serif;
     background-color: white;
     border-radius: 40px;
-    font-weight: bold;
-    color: #8A8A8A;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4A4A4A;
     padding-bottom: 20px;
 }
 
@@ -437,7 +439,8 @@ nav .logo {
     background-color: #FF7A19;
     text-align: center;
     border-radius: 40px;
-    box-shadow: 0 0 40px rgb(53, 53, 53);
+    box-shadow: 0 0 10px rgb(53, 53, 53);
+    
     width: 420px;
 }
 
@@ -445,19 +448,19 @@ nav .logo {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 10px;
+    padding-right:  10px;
     font-family: 'Poppins', sans-serif;
     background-color: white;
     border-radius: 40px;
-    color: #8A8A8A;
-    font-weight: bold;
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 500;
     padding-bottom: 20px;
     
 }
 
 .register-button{
-    margin: 10px;
     text-align: center;
     width: 100%;
     justify-content: center;
@@ -471,11 +474,6 @@ nav .logo {
     cursor: pointer;
     font-weight: bold;
 
-}
-.register-button:hover{
-    background-color: white;
-    color: #FF7A19;
-    border: 2px #FF7A19 solid;
 }
 
 @media screen and (max-width: 768px){
@@ -755,7 +753,7 @@ h2 {
 .primary-sponser-image{
     width: 200px;
     margin: auto;
-    box-shadow: 0 0 30px;
+    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
     border-radius: 10px;
     /* padding-bottom: 1rem; */
 }
@@ -784,7 +782,7 @@ h2 {
 }
 
 .secondary-sponser-image{
-    box-shadow: 0 0 30px rgb(53, 53, 53);
+    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
     border-radius: 10px;
     padding: 1rem;
     display: flex;
@@ -807,7 +805,7 @@ h2 {
 }
 
 .tertiary-sponser-image{
-    box-shadow: 0 0 30px rgb(53, 53, 53);
+    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
     border-radius: 10px;
     padding: 2rem;
     display: flex;
