@@ -46,10 +46,10 @@ nav .mainMenu .closeMenu , .icons i {
     display: none;
     cursor: pointer;
 }
-.fa-facebook:hover {color: rgb(0, 110, 255);}
+/* .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-twitter:hover {color: rgb(86, 154, 243);}
 .fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
+.fa-github:hover {color: rgb(255, 123, 0);} */
 
 
 nav .logo {
@@ -512,7 +512,7 @@ nav .logo {
 .role-cards{
     display: flex;
     text-align: center;
-    padding: 50px 10px 0;
+    padding: 70px 10px 0;
     justify-content: space-around;
     flex-wrap: wrap;
     gap:2rem;
@@ -865,12 +865,6 @@ nav .logo {
     padding-bottom: 2rem;
 }
 
-.othersponsers{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .sponser-heading{
     position: relative;
     text-align: center;
@@ -894,9 +888,10 @@ nav .logo {
 .primary-sponser-image{
     width: 200px;
     margin: auto;
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
-    border-radius: 10px;
-    /* padding-bottom: 1rem; */
+    background: #FFFFFF;
+    /* opacity: 0.5; */
+    box-shadow: 4px 4px 15px rgba(255, 122, 0, 0.22);
+    border-radius: 34px;
 }
 
 .primary-sponser-image img{
@@ -908,21 +903,25 @@ nav .logo {
 
 .primarysponsers-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bolder;
-    padding-bottom: 2rem;
+    padding: 4rem 0 2rem;
+    opacity: 0.75;
 }
 
 .secondary-sponser-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: bolder;
     padding-bottom: 2rem;
+    opacity: 0.2;
 }
 
 .secondary-sponser-image{
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
-    border-radius: 10px;
+    background: #FFFFFF;
+    /* opacity: 0.5; */
+    box-shadow: 4px 4px 15px rgba(255, 122, 0, 0.22);
+    border-radius: 34px;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -937,14 +936,17 @@ nav .logo {
 
 .tertiary-sponser-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bolder;
     padding-bottom: 2rem;
+    opacity: 0.2;
 }
 
 .tertiary-sponser-image{
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.22);
-    border-radius: 10px;
+    background: #FFFFFF;
+    /* opacity: 0.5; */
+    box-shadow: 4px 4px 15px rgba(255, 122, 0, 0.22);
+    border-radius: 34px;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -956,11 +958,32 @@ nav .logo {
     width: 200px;
 }
 
+.othersponsers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.other-sponsor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.other-sponsor-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    opacity: 0.2;
+}
+
 .sponsor-button{
     font-size: 1rem; 
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 25px;
-    background-color: #FF6701;
+    background-color: #FF7A00;
     color: white;
     font-weight: bolder;
     border: none;
@@ -968,6 +991,7 @@ nav .logo {
     margin-top: 1rem;
     display: block;
     margin: auto;
+    letter-spacing: 0.2em
 } 
 
 .contact{
@@ -1003,12 +1027,25 @@ nav .logo {
 }
 
 .contact-links{
+    position: relative;
     display: flex;
     justify-content: space-between;
     color: white;
     padding: 3rem 0 3rem;
     flex-wrap: wrap;
     gap:2rem;
+}
+
+.contact-links ul h3::after{
+    content: '';
+    position: absolute;
+    bottom: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    width: 25rem;
+    height: 3px;
+    border-radius: 0.8rem;
 }
 
 .contact-logo{
