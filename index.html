@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWOC</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
@@ -34,11 +34,11 @@
         </div>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="pages/teampage.html">TEAM</a></li>
-            <li><a href="pages/event.html">EVENT</a></li>
+            <li><a class="nav-underline" href="#home">HOME</a></li>
+            <li><a class="nav-underline-about" href="#about">ABOUT</a></li>
+            <li><a class="nav-underline-contact" href="#contact">CONTACT</a></li>
+            <li><a class="nav-underline" href="pages/teampage.html">TEAM</a></li>
+            <li><a class="nav-underline" href="pages/event.html">EVENT</a></li>
             <li><a href="#register"><button class="register-btn">REGISTER</button></a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
@@ -84,7 +84,7 @@
 
     <div class="home-page-unity" data-aos="fade-up" data-aos-delay="500">
         <img style="width: 300px;" src="assets/unity-new.png" alt="">
-        <h2>U-N-I-T(y)eam</h2>
+        <h3>U-N-I-T(y)eam</h3>
     </div>
 
 
@@ -113,7 +113,7 @@
             </div>
         </div>
         <div class="about-gwoc" data-aos="fade-up" data-aos-duration="1000">
-            <div class="about-gwoc-header" style="color: #8A8A8A;">
+            <div class="about-gwoc-header">
                 About GWOC
             </div>
             <div class="about-gwoc-image">
@@ -143,7 +143,7 @@
                 How Can You <span style="color: #FF7A19;">CONTRIBUTE ?</span>
             </p>
         </div>
-        <div class="contribution-content">
+        <div class="contribution-content"><p>
             The entire programme is divided into three primary contribution sections, with each contributor responsible
             for submitting their work under the supervision of supervisors who are in charge of making valid github
             commits.
@@ -153,8 +153,11 @@
             ways:<a> Documentation </a>, <a> Audio </a> and <a> Video </a>. Special prizes would be given for the
             multilingual
             category Video editors will be assigned to each team to edit the video and audio.
+            </p>
         </div>
     </div>
+
+    <!--About Contribution Section-->
 
     <div class="about-contribution">
 
@@ -188,16 +191,15 @@
         <div class="about-video-contribution" data-aos="fade-up" data-aos-duration="1000">
             <div class="about-video-contribution-image">
                 <img src="assets/isvideo.png">
-
             </div>
             <div class="about-video-contribution-content">
                 <div class="about-video-contribution-heading">
                     IsVideo()
                 </div>
                 <div class="about-video-contribution-content-content">
-                    1. Animations,screen-recordings,presentations and regular explanatory films are all possibilties
+                    1. Animations,screen-recordings,prese
                     <br>
-                    2. Video length should not exceed more than 25 min
+                    2. Video length should not exceed mor
                     <br>
                     3. Presentable and Clear
                     <br>
@@ -205,8 +207,8 @@
                     <br>
 
                 </div>
-
             </div>
+
         </div>
 
         <!-- Audio Contribution -->
@@ -218,9 +220,9 @@
                 <div class="about-audio-contribution-content-content">
                     1. Should be in mp3 format
                     <br>
-                    2. Includes speech clarity,concise ,low distortion
+                    2. Includes speech clarity,concise ,low
                     <br>
-                    3. Presentation can also be submitted along with audio[Optional]
+                    3. Presentation can also be submitted
                     <br>
                     4. Accepted via Google drive
                     <br>
@@ -250,7 +252,7 @@
                     <img src="assets/Contributer-role-card.png" alt="">
                 </div>
                 <div class="contributer-role-card-content">
-                    <p style="padding-top: 1rem; padding-bottom: 1rem; font-size: 1.2rem;">Whether you're a newbie
+                    <p>Whether you're a newbie
                         or a seasoned pro, GirlScript Winter of Contributing will give you a taste of what it's
                         like to contribute to a content repository. For three months, you will work on your
                         selected domains under the supervision of experienced supervisors <span
@@ -270,10 +272,10 @@
                     <img src="assets/Contributer-role-card.png" alt="">
                 </div>
                 <div class="contributer-role-card-content">
-                    <p style="padding-top: 1rem; padding-bottom: 1rem; font-size: 1.2rem;">Supervisors are experts
-                        in the Open Source project on which the team is currently working.At the commencement of
-                        the program, they will provide project roadmap, will be available to evaluate
-                        pull requests,assist with concepts,encourage the team throughout the program.
+                    <p>Supervisors are experts in the Open Source project on which the team is currently
+                        working. At the commencement of the program, they will provide project roadmap,
+                        will be available to evaluate pull requests, assist with concepts, encourage the
+                        team throughout the program.
                         <span style="color: #313131; font-weight: 700;">You can register here
                             for
                             GWoC
@@ -291,7 +293,7 @@
                     <img src="assets/Mentor-role-card.png" style="margin-bottom: 9px;">
                 </div>
                 <div class="mentor-role-card-content">
-                    <p style="padding-top: 1rem; padding-bottom: 1rem; font-size: 1.2rem;">Mentors will offer
+                    <p>Mentors will offer
                         assistance to the contributors. They will be available to contribute to Github,assist
                         contributors in creating content, answer questions, manage the subject repository, and
                         provide generally assistance to contributors throughout the winter.<span
@@ -309,182 +311,182 @@
     </div>
 
     <!--Timeline Section-->
+    <div class="timeline-section">
+        <h2>Stay up to date with <span style="color: #FF7A19;"> TIMELINE </span></h2>
+        <div class="timeline">
+            <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon ">
+                    <i class="far fa-calendar-alt"></i>
 
-    <h2>Stay up to date with <span style="color: #FF7A19;"> TIMELINE </span></h2>
-    <div class="timeline">
-        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon ">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 1st, 2021
-            </div>
-            <div class="timeline__event__content ">
-                <div class="timeline__event__title">
-                    Registration Open
                 </div>
-                <div class="timeline__event__description">
-                    <p>Registration begins for Contributors, Supervisors and Contributors
-                    </p>
+                <div class="timeline__event__date">
+                    August 1st, 2021
+                </div>
+                <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Registration Open
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Registration begins for Contributors, Supervisors and Contributors
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    August 15th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        REGISTRATION CLOSES
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Registration closes for Supervisors, Mentors and Contributors
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    August 15th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        SELECTION FOR CONTRIBUTORS
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Selection mails will be sent to the selected contributors.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    August 25th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        SELECTION FOR SUPERVISORS
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Selection mails will be sent to the selected supervisors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    August 26th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        SELECTION FOR MENTORS
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Selection mails will be sent to the selected mentors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    August 30th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        TOPIC ASSIGNMENT
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Topics to be assigned to the contributors by the mentors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    September 1st, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        CONTRIBUTION BEGINS
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Contributing period begins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    September 2nd-5th, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        GIT & GITHUB WORKSHOP
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>A virtual worshop on Git and Github.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
+                data-aos-duration="300">
+                <div class="timeline__event__icon">
+                    <i class="far fa-calendar-alt"></i>
+
+                </div>
+                <div class="timeline__event__date">
+                    December 1st, 2021
+                </div>
+                <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                        CONTRIBUTION ENDS
+                    </div>
+                    <div class="timeline__event__description">
+                        <p>Contributing period comes to an end.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 15th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    REGISTRATION CLOSES
-                </div>
-                <div class="timeline__event__description">
-                    <p>Registration closes for Supervisors, Mentors and Contributors
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 15th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    SELECTION FOR CONTRIBUTORS
-                </div>
-                <div class="timeline__event__description">
-                    <p>Selection mails will be sent to the selected contributors.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 25th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    SELECTION FOR SUPERVISORS
-                </div>
-                <div class="timeline__event__description">
-                    <p>Selection mails will be sent to the selected supervisors.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 26th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    SELECTION FOR MENTORS
-                </div>
-                <div class="timeline__event__description">
-                    <p>Selection mails will be sent to the selected mentors.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                August 30th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    TOPIC ASSIGNMENT
-                </div>
-                <div class="timeline__event__description">
-                    <p>Topics to be assigned to the contributors by the mentors.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                September 1st, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    CONTRIBUTION BEGINS
-                </div>
-                <div class="timeline__event__description">
-                    <p>Contributing period begins.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp timeline__event--type1" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                September 2nd-5th, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    GIT & GITHUB WORKSHOP
-                </div>
-                <div class="timeline__event__description">
-                    <p>A virtual worshop on Git and Github.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-down"
-            data-aos-duration="300">
-            <div class="timeline__event__icon">
-                <i class="far fa-calendar-alt"></i>
-
-            </div>
-            <div class="timeline__event__date">
-                December 1st, 2021
-            </div>
-            <div class="timeline__event__content">
-                <div class="timeline__event__title">
-                    CONTRIBUTION ENDS
-                </div>
-                <div class="timeline__event__description">
-                    <p>Contributing period comes to an end.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 

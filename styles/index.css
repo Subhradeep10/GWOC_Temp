@@ -25,7 +25,6 @@ nav .mainMenu li a {
     display: inline-block;
     padding: 20px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-weight: bold;
@@ -121,6 +120,49 @@ nav .logo {
     }
 }
 
+.nav-underline,
+.nav-underline-about,
+.nav-underline-contact{
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-underline:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 42%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+.nav-underline-about:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 38%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+.nav-underline-contact:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 31%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
 /*Home page Design*/
 
 .home-page-design-image{
@@ -138,8 +180,27 @@ nav .logo {
     text-align: center;
     align-items: center;
     font-size: 1.5rem;
-    color: #FF7A19;
-    padding: 4rem 0 0;
+    color: rgba(255, 122, 25, 0.8);;
+    padding: 2rem 0 2.5rem;
+}
+
+.home-page-unity h3{
+    text-decoration: none;
+    position: relative;
+    font-size: 48px;
+}
+
+.home-page-unity h3:after{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 11rem;
+    height: 4px;
+    border-radius: 0.8rem;
+    opacity: 0.5;
 }
 
 /*About Section*/
@@ -163,13 +224,27 @@ nav .logo {
 }
 
 .about-girlscript-header{
+    position: relative;
     padding-bottom: 2rem;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     font-weight: bolder;
+    color: #FFFFFF;
 }
+
+.about-girlscript-header::after{
+    content: '';
+    position: absolute;
+    bottom: 1.8rem;
+    left: 56px;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    width: 7rem;
+    height: 1px;
+    border-radius: 0.8rem;
+}
+
 .about-girlscript-image{
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
 .about-girlscript-image img{
@@ -178,18 +253,32 @@ nav .logo {
 
 .about-girlscript-content{
     padding-bottom: 2rem;
-    font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .about-gwoc-header{
+    position: relative;
     padding-bottom: 2rem;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     font-weight: bolder;
+    color:rgba(138, 138, 138, 1);
 }
+
+.about-gwoc-header:after{
+    content: '';
+    position: absolute;
+    bottom: 1.8rem;
+    left: 45px;
+    transform: translateX(-50%);
+    background-color: #AEAEAE;
+    width: 5.5rem;
+    height: 1px;
+    border-radius: 0.8rem;
+}
+
 .about-gwoc-image{
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .about-gwoc-image img{
@@ -198,8 +287,8 @@ nav .logo {
 
 .about-gwoc-content{
     padding-bottom: 2rem;
-    font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 @media screen and (max-width: 768px){
@@ -208,11 +297,18 @@ nav .logo {
     }
     .about-girlscript{
         width: 100%;
+        padding: 1.5rem;
     }
     .about-girlscript-image img{
         width: 250px;
         height: 100%;
     }
+
+    .about-gwoc{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
     .about-gwoc-image img{
         width: 250px;
         height: 100%;
@@ -224,33 +320,51 @@ nav .logo {
     .home-page-unity{
         position: relative;
         margin-bottom: 20%;
-        top: 70px;
+        top: 85px;
     }
 }
 /* Contribution */
 
 .contribution{
-    padding: 1rem;
+    padding: 5rem;
     width: 100%;
 }
 
 .contribution-heading{
+    position: relative;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 36px;
     padding: 1rem;
     font-weight: bolder;
 }
+
+.contribution-heading:after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF921B;
+    width: 23rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+
 .contribution-content{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    padding: 2.2rem;
-    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    padding: 2rem;
 }
 
 .contribution-content a{
     color: #FF6701;
+}
+
+@media screen and (max-width: 768px){
+    .contribution-content{
+        padding: 0rem;
+    }
 }
 
 /* Contribution Content */
@@ -258,6 +372,7 @@ nav .logo {
 .about-contribution{
     background-color: #FFF4E8;
     width: 100%;
+    padding: 3rem;
 }
 
 .about-document-contribution{
@@ -266,20 +381,18 @@ nav .logo {
     align-items: center;
     margin: auto;
     justify-content: space-around;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .about-document-contribution-heading{
     font-size: 2rem;
     padding-bottom: 1rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     color: #FF7A19;
 }
 
 .about-document-contribution-content-content{
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     word-spacing: 2px;
     font-weight: 600;
 }
@@ -291,23 +404,21 @@ nav .logo {
 .about-video-contribution{
     flex-direction: row;
     display: flex;
-    margin: auto;
     align-items: center;
+    margin: auto;
     justify-content: space-around;
-    padding: 5rem;
+    /* padding: 5rem; */
 }
 
 .about-video-contribution-heading{
     font-size: 2rem;
     padding-bottom: 1rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     color: #FF7A19;
 }
 
 .about-video-contribution-content-content{
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     word-spacing: 2px;
     font-weight: 600;
 }
@@ -321,31 +432,31 @@ nav .logo {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .about-audio-contribution-heading{
     font-size: 2rem;
     padding-bottom: 1rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     color: #FF7A19;
 }
 
 .about-audio-contribution-content-content{
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     word-spacing: 2px;
     font-weight: 600;
 }
 
 .about-audio-contribution-image{
     transition: 0.5s;
-
 }
 
-
 @media screen and (max-width: 768px){
+    .about-contribution{
+        padding: 1rem;
+    }
+
     .about-document-contribution{
         flex-direction: column;
         gap: 3rem;
@@ -376,54 +487,64 @@ nav .logo {
 
 /* Role Cards */
 .role-section{
-    padding-top: 4rem;
+    padding: 3rem;
 }
 
 .role-section-heading{
+    position: relative;
     text-align: center;
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
+}
+
+.role-section-heading:after{
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF921B;
+    width: 24rem;
+    height: 3px;
+    border-radius: 0.8rem;
 }
 
 .role-cards{
     display: flex;
     text-align: center;
-    padding: 50px 10px 50px;
+    padding: 50px 10px 0;
     justify-content: space-around;
     flex-wrap: wrap;
     gap:2rem;
 }
+
 .contributer-role-card{
     text-align: center;
-    background-color: #FF7A19;
+    background-color: #FF8500;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgb(53, 53, 53);
-    width: 420px;
+    box-shadow: 2px 0px 10px 0px #b1b1b1;
+    width: 350px;
+    height: 100%;
 }
 
 .contributer-role-card-heading{
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     color: white;
 }
 
 .contributer-role-card-content{
     display: flex;
+    padding: 30px;
     flex-direction: column;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Poppins', sans-serif;
     background-color: white;
     border-radius: 40px;
     font-size: 16px;
     font-weight: 500;
     color: #4A4A4A;
-    padding-bottom: 20px;
 }
 
 .mentor-role-card-heading{
@@ -431,50 +552,44 @@ nav .logo {
     padding-bottom: 1rem;
     font-size: 1.5rem;
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 
 .mentor-role-card{
-    background-color: #FF7A19;
+    background-color: #FF8500;
     text-align: center;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgb(53, 53, 53);
-    
-    width: 420px;
+    box-shadow: 2px 0px 10px 0px #b1b1b1;
+    width: 350px;
+    height: 100%;
 }
 
 .mentor-role-card-content{
     display: flex;
+    padding: 30px;
     flex-direction: column;
     text-align: center;
-    padding-left: 10px;
-    padding-right:  10px;
-    font-family: 'Poppins', sans-serif;
     background-color: white;
     border-radius: 40px;
     font-size: 16px;
     color: #4A4A4A;
     font-weight: 500;
-    padding-bottom: 20px;
-    
 }
 
 .register-button{
     text-align: center;
-    margin: auto;
-    width: 50%;
+    margin: 30px auto 0 auto;
     justify-content: center;
     padding: 10px;
     font-size: 1.1rem;
-    background-color: #FF7A19;
+    background-color: #FF921B;
     color: white;
     border-radius: 10px;
     transition: 0.5s;
     border: none;
     cursor: pointer;
     font-weight: bold;
-
+    border: 3px solid #FF7A19;
 }
 
 @media screen and (max-width: 768px){
@@ -491,63 +606,30 @@ nav .logo {
     .mentor-role-card{
         width: 300px;
     }
-    .mentor-role-card-heading{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-size: 20px;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bolder;
-    }
-    .contruibuter-role-card-heading{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-size: 20px;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-weight: bolder;
-    }
-    .mentor-role-card-content{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-left: 10px;
-        padding-right:  10px;
-        font-family: 'Poppins', sans-serif;
-        background-color: white;
-        border-radius: 40px;
-        font-size: 10px;
-        color: #4A4A4A;
-        font-weight: 500;
-        padding-bottom: 20px;
-        
-    }
-    .contruibuter-role-card-content{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-left: 10px;
-        padding-right:  10px;
-        font-family: 'Poppins', sans-serif;
-        background-color: white;
-        border-radius: 40px;
-        font-size: 10px;
-        color: #4A4A4A;
-        font-weight: 500;
-        padding-bottom: 20px;
-        
-    }
-    
 }
 
 /* Timeline Section */
 
-h2 {
+.timeline-section h2 {
+    position: relative;
     margin: 5%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: bold;
 }
+
+.timeline-section h2::after{
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF921B;
+    width: 23rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -774,7 +856,7 @@ h2 {
 /* Sponsers Section */
 
 .sponsers{
-    background-color: #FFF4E8;
+    background: linear-gradient(180deg, #FFF4E8 0%, rgba(255, 244, 232, 0.31) 100%);;
     padding-bottom: 6rem;
 }
 
@@ -790,11 +872,23 @@ h2 {
 }
 
 .sponser-heading{
+    position: relative;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 36px;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     padding: 2rem;
+}
+
+.sponser-heading:after{
+    content: '';
+    position: absolute;
+    bottom: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF921B;
+    width: 25rem;
+    height: 3px;
+    border-radius: 0.8rem;
 }
 
 .primary-sponser-image{
@@ -816,7 +910,6 @@ h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     padding-bottom: 2rem;
 }
 
@@ -824,7 +917,6 @@ h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     padding-bottom: 2rem;
 }
 
@@ -847,7 +939,6 @@ h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
     padding-bottom: 2rem;
 }
 
@@ -895,7 +986,6 @@ h2 {
     text-align: left;
     font-size: 1.5rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
 }
 
 .social-media{
