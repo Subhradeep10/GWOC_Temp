@@ -180,7 +180,7 @@ nav .logo {
     text-align: center;
     align-items: center;
     font-size: 1.5rem;
-    color: rgba(255, 122, 25, 0.8);;
+    color: rgba(255, 122, 25, 0.8);
     padding: 2rem 0 2.5rem;
 }
 
@@ -362,8 +362,17 @@ nav .logo {
 }
 
 @media screen and (max-width: 768px){
+
+    .contribution{
+        padding: 2rem;
+    }
+
     .contribution-content{
         padding: 0rem;
+    }
+
+    .contribution-heading:after{
+        width: 13rem;
     }
 }
 
@@ -454,7 +463,7 @@ nav .logo {
 
 @media screen and (max-width: 768px){
     .about-contribution{
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .about-document-contribution{
@@ -597,6 +606,10 @@ nav .logo {
         display: flex;
         flex-direction: column;
         align-content: space-around;
+    }
+
+    .role-section-heading:after{
+        width: 14rem;
     }
 
     .contributer-role-card{
@@ -798,9 +811,15 @@ nav .logo {
     content: none;
 }
 @media (max-width: 786px) {
+
+    .timeline-section h2::after{
+        width: 14rem;
+    }
+
     .timeline__event {
         flex-direction: column;
         align-self: center;
+        width: 70vw;
    }
     .timeline__event__content {
         width: 100%;
@@ -994,6 +1013,18 @@ nav .logo {
     letter-spacing: 0.2em
 } 
 
+@media (max-width:786px) {
+    .sponser-heading:after{
+        width: 14rem;
+    }
+}
+
+@media (max-width:545px){
+    .tertiary-sponser-heading{
+        padding-top: 2rem;
+    }
+}
+
 .contact{
     background-color: #FF8400;
     color: white;
@@ -1027,7 +1058,6 @@ nav .logo {
 }
 
 .contact-links{
-    position: relative;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -1036,16 +1066,21 @@ nav .logo {
     gap:2rem;
 }
 
-.contact-links ul h3::after{
+.quick-links h3{
+    position: relative;
+}
+
+.quick-links h3::after{
     content: '';
     position: absolute;
-    bottom: 2.2rem;
-    left: 50%;
+    bottom: 0rem;
+    left: 87%;
     transform: translateX(-50%);
     background-color: #ffffff;
-    width: 25rem;
-    height: 3px;
+    width: 2rem;
+    height: 2px;
     border-radius: 0.8rem;
+    opacity: 0.5;
 }
 
 .contact-logo{
@@ -1061,7 +1096,7 @@ nav .logo {
 }
 
 .contact-links ul li{
-    padding: 5px;
+    margin: 6px 0 0;
 }
 
 .contact-copyright{
