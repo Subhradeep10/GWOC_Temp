@@ -36,10 +36,10 @@ nav .mainMenu .closeMenu , .icons i {
     display: none;
     cursor: pointer;
 }
-.fa-facebook:hover {color: rgb(0, 110, 255);}
+/* .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-twitter:hover {color: rgb(86, 154, 243);}
 .fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
+.fa-github:hover {color: rgb(255, 123, 0);} */
 
 
 nav .logo {
@@ -182,6 +182,8 @@ a{
 }
 
 
+/* Contact Section */
+
 .contact{
     background-color: #FF8400;
     color: white;
@@ -198,7 +200,6 @@ a{
     text-align: left;
     font-size: 1.5rem;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
 }
 
 .social-media{
@@ -224,6 +225,23 @@ a{
     gap:2rem;
 }
 
+.quick-links h2{
+    position: relative;
+}
+
+.quick-links h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0rem;
+    left: 87%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+    opacity: 0.5;
+}
+
 .contact-logo{
     background-color: #FFF3E5;
     border-radius: 50rem;
@@ -237,7 +255,7 @@ a{
 }
 
 .contact-links ul li{
-    padding: 5px;
+    margin: 6px 0 0;
 }
 
 .contact-copyright{
@@ -245,6 +263,14 @@ a{
     color: white;
     text-align: center;
     padding: 1rem;
-    font-weight: bold;
 }
 
+@media (max-width:786px) {
+    .contact{
+        padding: 3rem 2rem 0;
+    }
+
+    .contact-links{
+        justify-content: center;
+    }
+}
