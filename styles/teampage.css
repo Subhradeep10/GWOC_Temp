@@ -431,20 +431,6 @@ max-height:75%;
     }
 }
 
-p,a,h1,h2,h4 {
-	margin: 0;
-	padding: 0;
-}
-
-.section-team {
-	font-family: "Poppins", sans-serif;
-	padding: 80px 0;
-}
-
-.section-team .header-section {
-	margin-bottom: 50px;
-}
-
 .section-team .header-section .small-title {
     margin-bottom: 25px;
 	font-size: 16px;
@@ -457,10 +443,29 @@ p,a,h1,h2,h4 {
     font-size: 45px;
 }
 
+.header-section .title {
+    text-align: center;
+}
+
+.header-section .small-title {
+    text-align: center;
+}
+
+.team-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:2rem;
+}
+
+.team-details{
+    flex: 0 0 auto;
+    width: 25%;
+}
+
 .section-team .single-person {
 	margin-top: 30px;
 	padding: 30px;
-	background-color: #f6f9ff;
 	border-radius: 5px;
 }
 
@@ -582,7 +587,30 @@ p,a,h1,h2,h4 {
 .section-team .single-person:hover .speciality {
 	color: #fff;
 }
-/* styling footer */
+
+@media (max-width: 1200px){
+    .team-details{
+    flex: 0 0 auto;
+    width: 30%;
+    }
+}
+
+@media (max-width: 1080px){
+    .team-details{
+    flex: 0 0 auto;
+    width: 40%;
+    }
+}
+
+@media (max-width: 706px){
+    .team-details{
+    flex: 0 0 auto;
+    width: 100%;
+    }
+}
+
+/* Contact Section */
+
 .contact{
     background-color: #FF8400;
     color: white;

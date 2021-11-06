@@ -7,6 +7,7 @@
     animation: normal;
 }
 
+/* Navbar */
 nav {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -23,7 +24,6 @@ nav .mainMenu li a {
     display: inline-block;
     padding: 20px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-weight: bold;
@@ -118,6 +118,50 @@ nav .logo {
         padding: 12px;
     }
 }
+
+.nav-underline,
+.nav-underline-about,
+.nav-underline-contact{
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-underline:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 42%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+.nav-underline-about:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 38%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+.nav-underline-contact:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 31%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
 
 /* Styling Events Page*/
 
@@ -215,11 +259,11 @@ nav .logo {
     gap:2rem;
 }
 
-.quick-links h2{
+.quick-links h3{
     position: relative;
 }
 
-.quick-links h2::after{
+.quick-links h3::after{
     content: '';
     position: absolute;
     bottom: 0rem;
