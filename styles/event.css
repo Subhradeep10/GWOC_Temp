@@ -121,7 +121,8 @@ nav .logo {
 
 .nav-underline,
 .nav-underline-about,
-.nav-underline-contact{
+.nav-underline-contact,
+.nav-underline-event{
     text-decoration: none;
     position: relative;
 }
@@ -162,6 +163,21 @@ nav .logo {
     border-radius: 0.8rem;
 }
 
+.nav-underline-event:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+nav .mainMenu li a.nav-underline-event {
+    color: rgb(255,94,0);
+}
 
 /* Styling Events Page*/
 

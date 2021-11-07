@@ -121,7 +121,8 @@ nav .logo {
 
 .nav-underline,
 .nav-underline-about,
-.nav-underline-contact{
+.nav-underline-contact,
+.nav-underline-team{
     text-decoration: none;
     position: relative;
 }
@@ -155,6 +156,18 @@ nav .logo {
     position: absolute;
     bottom: 1.3rem;
     left: 31%;
+    transform: translateX(-50%);
+    background-color: #FF7518;
+    width: 2rem;
+    height: 2px;
+    border-radius: 0.8rem;
+}
+
+.nav-underline-team:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 44%;
     transform: translateX(-50%);
     background-color: #FF7518;
     width: 2rem;
@@ -332,7 +345,7 @@ nav .logo {
 .contribution-heading{
     position: relative;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     padding: 1rem;
     font-weight: bolder;
 }
@@ -501,7 +514,7 @@ nav .logo {
 .role-section-heading{
     position: relative;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -626,7 +639,7 @@ nav .logo {
     position: relative;
     margin: 5%;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -703,7 +716,7 @@ nav .logo {
 }
 .timeline__event__content {
     padding: 20px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 30px -18px rgba(0, 0, 0, 0.3), 0 -12px 30px -8px rgba(0, 0, 0, 0.025);
     background: #fff;
     width: calc(40vw - 84px);
     border-radius: 0 6px 6px 0;
@@ -731,7 +744,7 @@ nav .logo {
     background: #FF7A00;
     border-radius: 100%;
     width: 40px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 30px -18px rgba(0, 0, 0, 0.3), 0 -12px 30px -8px rgba(0, 0, 0, 0.025);
     padding: 40px;
     height: 40px;
     position: relative;
@@ -875,7 +888,8 @@ nav .logo {
 
 .sponsers{
     background: linear-gradient(180deg, #FFF4E8 0%, rgba(255, 244, 232, 0.31) 100%);;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
+    /* padding: 4rem; */
 }
 
 .primary-sponsers{
@@ -886,7 +900,7 @@ nav .logo {
 .sponser-heading{
     position: relative;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
     padding: 2rem;
 }
@@ -1027,7 +1041,7 @@ nav .logo {
 /* Contact Section */
 
 .contact{
-    background-color: #FF8400;
+    background-color: #FF7A00;
     color: white;
     padding: 3rem 5rem 0;
 }
