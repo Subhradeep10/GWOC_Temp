@@ -92,7 +92,7 @@ nav .logo {
         align-items: center;
         background: rgb(255, 94, 0);
         color: #fff;
-        transition: top 1s ease;
+        transition: top 0.5s ease;
         align-items: center;
         display: none;
     }
